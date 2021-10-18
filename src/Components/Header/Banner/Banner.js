@@ -2,12 +2,12 @@
 import React from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import './Banner.css';
-import banner from '../../../img/banner2.jpg'
+import banner from '../../../img/banner.jpeg'
 const Banner = () => {
     return (
         <div className="banner">
-            <Row className="border border-danger mx-auto">
-                <Col lg={4} xs={11} className="border border-danger  py-5 ps-lg-5  d-flex flex-column justify-content-center " id="banner-text">
+            <Row className=" mx-auto">
+                <Col lg={6} xs={11} className="  py-5 ps-lg-5  d-flex flex-column justify-content-center " id="banner-text">
                     <div className="">
                         <h1 className="mb-5">Consult a Doctor
                             <br />
@@ -27,8 +27,11 @@ const Banner = () => {
                         </Button>
                     </div>
                 </Col>
-                <Col lg={7} xs={10} className="border border-danger" id="banner-img">
-                    <img src={banner} alt="banner" className="w-100" />
+                <Col lg={5} xs={10} id="banner-img" className="">
+                    <img src={banner} alt="banner" className="w-75" />
+                    {/* <Button className="btn-theme-white rounded-pill px-4" id="doctors-online">
+                        <span className="online-symbol">*</span> 2210 Doctors online
+                    </Button> */}
                 </Col>
             </Row>
 

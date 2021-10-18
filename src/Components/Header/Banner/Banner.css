@@ -18,17 +18,21 @@
 }
 .btn-theme-purple:hover{
     background-color: burlywood;
+    color: black;
     
 }
 .btn-theme-white{
     background-color: white;
-    color:black;
+    color:#72569d;
     border-color: burlywood;
+    font-weight: 700;
 }
 .btn-theme-white:hover{
     background-color: burlywood;
+    color: black;
     
 }
-#banner-img{
-    position: relative;
+#banner-img img{
+    
+    /* height: 900px; */
 }
