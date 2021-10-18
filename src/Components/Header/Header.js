@@ -6,8 +6,9 @@ import Navigation from './Navigation/Navigation';
 const Header = () => {
     return (
         <div>
-            {/* adding the navbar in header area */}
+            {/* 1. adding the navbar in header area */}
             <Navigation></Navigation>
+            {/* 2.adding banner  */}
         </div>
     );
 };

@@ -6,7 +6,7 @@ import './Navigation.css'
 import { HashLink } from 'react-router-hash-link';
 const Navigation = () => {
     return (
-        <Navbar className="nav-bar">
+        <Navbar className="nav-bar" collapseOnSelect expand="lg">
             <Container>
                 <Navbar.Brand href="#home">
                     Doconline <br />
