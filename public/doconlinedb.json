@@ -27,21 +27,25 @@
     ],
     [
         {
+            "id": 5,
             "eventKey": "0",
             "header": "what does telemedicine mean?",
             "body": "Telemedicine is the practice of medicine using technology to deliver care at a distance. A physician in one location uses a telecommunications infrastructure to deliver care to a patient at a distant site."
         },
         {
+            "id": 6,
             "eventKey": "1",
             "header": "what is telemedicine used for?",
             "body": "Telemedicine technology is frequently used for follow-up visits, management of chronic conditions, medication management, specialist consultation and a host of other clinical services that can be provided remotely via secure video and audio connections."
         },
         {
+            "id": 7,
             "eventKey": "2",
             "header": "what equipment you require for telemedicine?",
             "body": "Remote vital monitoring,Virtual stethoscopes,Thermometers,Digital otoscopes,Pulse oximeters,High-quality cameras for specialty practices,HIPAA-compliant software."
         },
         {
+            "id": 8,
             "eventKey": "3",
             "header": "what are the advantages of telemedicine?",
             "body": "Adopting the latest telemedicine initiatives can help your practice achieve numerous benefits. Telemedicine can lower healthcare costs, drive up efficiency and revenue, provide your patients better access to healthcare services, and ultimately get happier, healthier patients who stay in your organization."
