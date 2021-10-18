@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+.nav-bar{
+    background-color: #fef5ed;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
