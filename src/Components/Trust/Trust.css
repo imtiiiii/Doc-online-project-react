@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+.trust-card{
+    /* margin-left: 80px; */
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+.trust-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-icon img{
+    border-radius: 50%;
+    height: 150px;
+    width: 500px;
+    
+}
+.trust-title{
+    text-align: center;
+    color: #1e1451;
+}

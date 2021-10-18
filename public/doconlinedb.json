@@ -1,0 +1,28 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "All Specialist",
+            "description": "You can reach out to 3500+ doctors from 80+ speacialties, who are experienced in telemedicine.",
+            "img": "https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Private & Secure",
+            "description": "All your data is protected and safegurded with sucresd SSL. data at rest encryption.",
+            "img": "https://image.flaticon.com/icons/png/512/1131/1131869.png"
+        },
+        {
+            "id": 3,
+            "title": "Million Customer",
+            "description": "Trusted by millions and serving users worldwide. Users from 196 countries and counting.",
+            "img": "https://image.freepik.com/free-vector/character-illustration-people-holding-user-account-icons_53876-43022.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Chatbot Support",
+            "description": "Get access to Doconline via chat bots for a fantastic telehealth service.contact via telegram",
+            "img": "https://image.freepik.com/free-vector/chat-bubble_53876-25540.jpg"
+        }
+    ]
+]
