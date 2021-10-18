@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Accordion, Col, Row } from 'react-bootstrap';
 import './Faq.css'
-import faqImage from '../../img/faq1.jpg'
+import faqImage from '../../img/faq2.jpg'
 import QNA from '../Qna/QNA';
 const Faq = () => {
     // we will keep a state to keep all the data-(faq questions) .
@@ -23,14 +23,14 @@ const Faq = () => {
                 <h4>A frequently asked questions(FAQ) forum is often used in articles, websites, email lists, and online forums where common questions tend to recur.</h4>
             </div>
             <div>
-                <Row className="border border-danger mt-5">
-                    <Col lg={6} className="">
-                        <div className="w-75 mx-auto">
-                            <img src={faqImage} alt="faq" className="w-50 faq-img"></img>
+                <Row className=" my-5">
+                    <Col lg={6} xs={11} className="border d-flex justify-content-end align-items-end">
+                        <div className="w-75  mx-auto">
+                            <img src={faqImage} alt="faq" className="faq-img w-100  mx-auto "></img>
                         </div>
                     </Col>
-                    <Col lg={4}>
-                        <Accordion defaultActiveKey="0" flush>
+                    <Col lg={3} xs={11} className="border">
+                        <Accordion defaultActiveKey="0" flush className="border">
                             {
                                 qNAs.map(qNA => <QNA qNA={qNA} key={qNA.id}></QNA>)
                             }

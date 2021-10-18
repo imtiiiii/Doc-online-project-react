@@ -7,7 +7,7 @@ const QNA = (props) => {
     const { eventKey, header, body } = props.qNA;
 
     return (
-        <div className="qna my-3">
+        <div className="qna my-3 ">
             <Accordion.Item eventKey={eventKey}>
                 <Accordion.Header>{header}</Accordion.Header>
                 <Accordion.Body>
