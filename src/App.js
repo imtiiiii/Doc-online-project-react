@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Components/Home/Home';
+import Faq from './Components/Faq/Faq';
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
           </Route>
           {/* Route of - FAQ page*/}
           <Route path='/faq'>
-
+            <Faq></Faq>
           </Route>
         </Switch>
       </Router>

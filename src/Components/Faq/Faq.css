@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+.faq-section{
+    font-family: 'PT Serif', serif;
+    color: #1e1451;
+}
+.faq-heading{
+    width: 35%;
+}
