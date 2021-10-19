@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Faq from './Components/Faq/Faq';
+import Register from './Components/Register/Register';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,10 @@ function App() {
           {/* Route of - FAQ page*/}
           <Route path='/faq'>
             <Faq></Faq>
+          </Route>
+          {/* route of - Registration */}
+          <Route path='/register'>
+            <Register></Register>
           </Route>
         </Switch>
       </Router>
