@@ -17,6 +17,7 @@ const Navigation = () => {
                     <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#features">Features</Nav.Link>
                     <Nav.Link as={HashLink} to="/faq">FAQ</Nav.Link>
+                    <Nav.Link as={HashLink} to="/articles">Articles</Nav.Link>
                     {/* login logout have to be dynamic. fixing left. delete this comment after fixing */}
                     <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
                 </Nav>
