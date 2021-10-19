@@ -50,5 +50,61 @@
             "header": "what are the advantages of telemedicine?",
             "body": "Adopting the latest telemedicine initiatives can help your practice achieve numerous benefits. Telemedicine can lower healthcare costs, drive up efficiency and revenue, provide your patients better access to healthcare services, and ultimately get happier, healthier patients who stay in your organization."
         }
+    ],
+    [
+        {
+            "id": 9,
+            "date": "15 June",
+            "views": "1.9k",
+            "title": "COVID-19 Vaccines and People with Choronic Condtions",
+            "description": "COVID-19 vaccine is one of the highest priorities in this current pandemic situation. All the countries around the world are rolling out COVID-19 vaccines.",
+            "Author": "Dr. Muhammad Ibrahim",
+            "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
+        },
+        {
+            "id": 10,
+            "date": "14 June",
+            "views": "1.8k",
+            "title": "How to decrease the level of adipose in the body?",
+            "description": "Serum or blood creatinine gives an idea about renal health. Creatine phosphate is made with three different types of amino acids such as arginine, glycine, and methionine.",
+            "Author": "Dr. Mehrab",
+            "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
+        },
+        {
+            "id": 11,
+            "date": "13 June",
+            "views": "1.5k",
+            "title": "Current State of Disparities in Neurology and Neurologic Training",
+            "description": "Medical school taught us to ask 'men,women, or both?' but then we became neurology residents.. Now what? Scrolling through the lengthy liar of this year's presentations at the American Academy.",
+            "Author": "Dr. Bilal",
+            "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
+        },
+        {
+            "id": 12,
+            "date": "10 June",
+            "views": "2k",
+            "title": "COVID-19 Updates: Colin Powel was Undergoing Cancer Treatment, Dies due to COVID-19",
+            "description": "Former Secretary of State Colin Powell has died at age 84, reported The New York Times.Powell, also the former chairman the Joint Chiefs of Staff, had been undergoing treatment for multiple myeloma, a type of blood cancer, which weakened his immune system.He then contracted the coronavirus even though he was fully vaccinated.He had been unable to get a booster shot, since he developed COVID-19.",
+            "Author": "Dr. John Minchillo",
+            "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
+        },
+        {
+            "id": 13,
+            "date": "11 June",
+            "views": "2k",
+            "title": "Japan becomes COVID-19 success story",
+            "description": "Japan has unexpectedly become a COVID-19 success story, according to The Associated Press (AP).Japan, unlike many countries worldwide, never implemented lockdowns. Instead, the country relied on a series of states of emergency, reported AP.Daily new COVID-19 cases in Tokyo have now fallen from a peak of nearly 6,000 in mid-August to an 11-month low of fewer than 100.",
+            "Author": "Dr. Maruf",
+            "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
+        },
+        {
+            "id": 14,
+            "date": "1 Auguest",
+            "views": "2.5k",
+            "title": "COVID-19: What do we know about the C.1.2 variant?",
+            "description": "The more viruses spread, the more likely they are to mutate and form different variants. Variants that become more transmissible, resistant to current treatment options and vaccines, or cause more severe disease, are called Variants of Concern (VOC).",
+            "Author": "Dr. Annie Lenon",
+            "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
+        }
     ]
 ]
