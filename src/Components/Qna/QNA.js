@@ -9,9 +9,9 @@ const QNA = (props) => {
     return (
         <div className="qna my-3 ">
             <Accordion.Item eventKey={eventKey}>
-                <Accordion.Header>{header}</Accordion.Header>
+                <Accordion.Header><h3>{header}</h3></Accordion.Header>
                 <Accordion.Body>
-                    {body}
+                    <p> {body}</p>
                 </Accordion.Body>
             </Accordion.Item>
         </div>

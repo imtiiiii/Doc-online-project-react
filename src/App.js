@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import Faq from './Components/Faq/Faq';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
+import Articles from './Components/Articles/Articles';
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path='/articles'>
+            <Articles></Articles>
           </Route>
         </Switch>
       </Router>

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Accordion, Col, Row } from 'react-bootstrap';
 import './Faq.css'
-import faqImage from '../../img/faq2.jpg'
+import faqImage from '../../img/faq1.jpeg'
 import QNA from '../Qna/QNA';
 const Faq = () => {
     // we will keep a state to keep all the data-(faq questions) .
@@ -24,13 +24,15 @@ const Faq = () => {
             </div>
             <div>
                 <Row className=" my-5">
-                    <Col lg={6} xs={11} className="border d-flex justify-content-end align-items-end">
+                    {/* left side image */}
+                    <Col lg={6} xs={11} className="d-flex justify-content-end align-items-end">
                         <div className="w-75  mx-auto">
                             <img src={faqImage} alt="faq" className="faq-img w-100  mx-auto "></img>
                         </div>
                     </Col>
-                    <Col lg={3} xs={11} className="border">
-                        <Accordion defaultActiveKey="0" flush className="border">
+                    {/* accordian/ faq-QNA */}
+                    <Col lg={3} xs={11} className=" d-flex align-items-center shadow-sm bg-light">
+                        <Accordion defaultActiveKey="0" flush >
                             {
                                 qNAs.map(qNA => <QNA qNA={qNA} key={qNA.id}></QNA>)
                             }
