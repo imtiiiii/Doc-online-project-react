@@ -1,0 +1,17 @@
+.article-card{
+    height: 450px;
+}
+.article-card-title{
+    height: 100px;
+}
+.article-card-description{
+    height: 200px;
+}
+
+.card-footer{
+    height: 80px;
+}
+.card-footer img{
+    width: 30px;
+    /* border-radius: 50%; */
+}
