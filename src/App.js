@@ -18,6 +18,9 @@ function App() {
           <Header></Header>
           <Switch>
             {/* route of - Home page */}
+            <Route path="/" exact>
+              <Home></Home>
+            </Route>
             <Route path="/home" exact>
               <Home></Home>
             </Route>
