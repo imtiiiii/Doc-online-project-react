@@ -20,11 +20,11 @@ const Home = () => {
     //now use a useEffect to load the data 
     //which contains specialities data
     useEffect(() => {
-        fetch('./doconlinedb.json')
+        fetch('../../../public/doconlinedb.json')
             .then(res => res.json())
             .then(data => setSpecialities(data[3]));
     }, [])
-    console.log(speacialities);
+    //console.log(speacialities);
 
     return (
         <div>

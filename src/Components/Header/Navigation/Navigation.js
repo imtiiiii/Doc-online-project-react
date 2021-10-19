@@ -14,7 +14,7 @@ const Navigation = () => {
                 </Navbar.Brand>
                 <Nav className="ms-auto">
                     {/* --------------- I have to fix nav href links..  delete this comment after fixing */}
-                    <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#features">Features</Nav.Link>
                     <Nav.Link as={HashLink} to="/faq">FAQ</Nav.Link>
                     <Nav.Link as={HashLink} to="/articles">Articles</Nav.Link>

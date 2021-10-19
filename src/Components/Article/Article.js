@@ -1,6 +1,6 @@
 //this component will show all the articles one by one
 import React from 'react';
-import { Card, CardGroup, Col, Container, Row } from 'react-bootstrap';
+import { Card, CardGroup, Col } from 'react-bootstrap';
 import './Article.css'
 const Article = (props) => {
     const { title, description, Author, date, views, articleImg, img } = (props.article);

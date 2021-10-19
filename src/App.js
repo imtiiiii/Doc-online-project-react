@@ -9,6 +9,7 @@ import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import Articles from './Components/Articles/Articles';
 import AuthProvider from './Context/AuthProvider';
+import Appointment from './Components/Appointment/Appointment';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,9 @@ function App() {
             {/* route of - Home page */}
             <Route path="/home" exact>
               <Home></Home>
+            </Route>
+            <Route path="/home/:id">
+              <Appointment></Appointment>
             </Route>
             {/* Route of - FAQ page*/}
             <Route path='/faq'>
