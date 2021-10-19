@@ -1,9 +1,33 @@
 //this componenet is for login 
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import userImg from '../../img/register1.png'
 import loginImg from '../../img/login1.png';
+import useAuth from '../../Hooks/useAuth';
 const Login = () => {
+
+    const { user, loginWithEmailPass, googleLogin, regStutus } = useAuth();
+
+    // using  useState to keep user email and password
+    const [userDetails, setUserDetails] = useState(
+        {
+            email: "",
+            pass: "",
+        }
+    )
+    const handleGoogleLogin = () => {
+        googleLogin();
+    }
+    const handleInput = (e) => {
+        const valueName = e.target.name;
+        const value = e.target.value;
+        setUserDetails({ ...userDetails, [valueName]: value })
+    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        loginWithEmailPass(userDetails.email, userDetails.pass)
+
+    }
     return (
         <>
 
@@ -18,32 +42,30 @@ const Login = () => {
                     <Col lg={6} className="d-flex justify-content-center align-items-center">
                         <div className=" d-flex justify-content-start align-items-center">
                             <div className="d-flex justify-content-start  form-container ">
-                                <Form className="shadow-sm px-5 rounded-3 bg-light mt-3 mb-3 py-5">
+                                <form onSubmit={handleSubmit} className="shadow-sm px-5 rounded-3 bg-light mt-5 mb-3 py-5">
                                     {/* user icon */}
-                                    <div className="w-100 d-flex justify-content-center align-items-center mb-5 mt-3">
-                                        <img src={userImg} alt="user" className=" user-icon" />
+                                    <div className="w-25 mx-auto d-flex justify-content-center align-items-center mb-5 mt-3">
+                                        <img src={userImg} alt="user" className="  user-icon" />
                                     </div>
                                     {/* Emain input field start */}
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Email address</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter email" />
-
-                                    </Form.Group>
-                                    {/* Emain input field end */}
-                                    {/* password input field */}
-                                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                                        <Form.Label>Password</Form.Label>
-                                        <Form.Control type="password" placeholder="Password" />
-                                    </Form.Group>
-
-                                    {/* checkbox */}
-                                    {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Aleady Registered?" />
-                    </Form.Group> */}
-                                    <Button className="btn-theme-purple text-white" type="submit">
+                                    <label htmlFor="email" className="form-label">Email address</label>
+                                    <input type="email" className="form-control" aria-describedby="emailHelp" name="email" id="email" onBlur={handleInput} />
+                                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                    {/* password field */}
+                                    <div className="mb-3">
+                                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                                        <input type="password" className="form-control" id="exampleInputPassword1" name="pass" onBlur={handleInput} />
+                                    </div>
+                                    <Button className="btn-theme-purple text-white" type="submit" >
                                         Login
                                     </Button>
-                                </Form>
+                                    <Button className="btn-theme-purple text-white" type="submit" onClick={handleGoogleLogin}>Google Login </Button>
+                                    {
+                                        user && <h3 className="mt-3">{regStutus}</h3>
+                                    }
+
+                                </form>
                             </div>
 
                         </div>

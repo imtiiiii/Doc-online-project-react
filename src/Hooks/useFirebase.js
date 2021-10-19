@@ -28,8 +28,10 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 setUser(result.user);
+                setRegStutus("Successfull");
             })
             .catch((error) => {
+                setRegStutus("Wrong password");
 
             });
     }

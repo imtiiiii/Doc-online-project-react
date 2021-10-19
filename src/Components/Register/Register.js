@@ -87,7 +87,7 @@ const Register = () => {
                                         Google Login
                                     </Button>
                                     {
-                                        user && <h1>{regStutus}</h1>
+                                        user && <h3>{regStutus}</h3>
                                     }
 
                                 </form>
