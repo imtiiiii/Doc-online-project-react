@@ -19,6 +19,8 @@
     color: black;
     font-weight:400;
     border-color: burlywood;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .btn-theme-purple:hover{
     background-color: burlywood;

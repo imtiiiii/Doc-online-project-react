@@ -18,13 +18,13 @@ const Articles = () => {
     }
     return (
         <>
-            <div className="articles-heading text-center">
+            <div className="articles-heading text-center mt-5">
                 <h1>Our Recent articles</h1>
                 <h5>Article is a part or segment of something joined to other parts, <br></br>
                     or, in combination,forming a structured set.
                 </h5>
             </div>
-            <div className="articles-container">
+            <div className="articles-container my-5">
                 <Row>
                     {
                         showAllArticles ? articles.map(article => <Article article={article} key={article.id}>
@@ -38,7 +38,7 @@ const Articles = () => {
                 </Row>
                 {
                     showAllArticles ||
-                    <button className="text-center" onClick={handleShowAll}> More Articles</button>
+                    <button className="btn-theme-purple rounded-pill d-flex justify-content-center mx-auto" id="more-articles" onClick={handleShowAll}> More Articles</button>
                 }
 
             </div>

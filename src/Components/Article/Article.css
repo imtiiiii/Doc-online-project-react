@@ -1,8 +1,15 @@
 .article-card{
-    height: 450px;
+    height: 800px;
+}
+.article-img{
+    width: 100%;
+    height: 300px;
+    object-fit:fill;
 }
 .article-card-title{
     height: 100px;
+    color:#72569d;
+    font-weight: bold;
 }
 .article-card-description{
     height: 200px;
@@ -14,4 +21,9 @@
 .card-footer img{
     width: 30px;
     /* border-radius: 50%; */
+}
+#more-articles{
+    width: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

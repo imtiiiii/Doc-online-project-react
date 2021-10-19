@@ -54,6 +54,7 @@
     [
         {
             "id": 9,
+            "articleImg": "https://image.freepik.com/free-photo/young-man-wearing-blue-polo-shirt-medical-protective-mask-pointing-with-finger-side-standing-isolated-orange-wall_141793-15652.jpg",
             "date": "15 June",
             "views": "1.9k",
             "title": "COVID-19 Vaccines and People with Choronic Condtions",
@@ -63,6 +64,7 @@
         },
         {
             "id": 10,
+            "articleImg": "https://image.freepik.com/free-photo/dissatisfied-young-man-has-stomachache-frowns-with-discontent-holds-cup-hot-beverage-wears-yellow-hat-striped-sailor-jumper_273609-30661.jpg",
             "date": "14 June",
             "views": "1.8k",
             "title": "How to decrease the level of adipose in the body?",
@@ -72,6 +74,7 @@
         },
         {
             "id": 11,
+            "articleImg": "https://image.freepik.com/free-vector/human-nervous-system_53876-90445.jpg",
             "date": "13 June",
             "views": "1.5k",
             "title": "Current State of Disparities in Neurology and Neurologic Training",
@@ -81,6 +84,7 @@
         },
         {
             "id": 12,
+            "articleImg": "https://image.freepik.com/free-vector/covid-19-coronavirus-outbreak-design-with-falling-virus-cell-typography-letter-light-background-vector-2019-ncov-corona-virus-illustration-dangerous-sars-epidemic-theme-banner_1314-2724.jpg",
             "date": "10 June",
             "views": "2k",
             "title": "COVID-19 Updates: Colin Powel was Undergoing Cancer Treatment, Dies due to COVID-19",
@@ -90,6 +94,7 @@
         },
         {
             "id": 13,
+            "articleImg": "https://image.freepik.com/free-vector/flat-vaccination-campaign-badge-collection_23-2148963495.jpg",
             "date": "11 June",
             "views": "2k",
             "title": "Japan becomes COVID-19 success story",
@@ -99,6 +104,7 @@
         },
         {
             "id": 14,
+            "articleImg": "https://image.freepik.com/free-photo/person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus_342744-899.jpg",
             "date": "1 Auguest",
             "views": "2.5k",
             "title": "COVID-19: What do we know about the C.1.2 variant?",

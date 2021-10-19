@@ -3,19 +3,19 @@ import React from 'react';
 import { Card, CardGroup, Col, Container, Row } from 'react-bootstrap';
 import './Article.css'
 const Article = (props) => {
-    const { title, description, Author, date, views, img } = (props.article);
+    const { title, description, Author, date, views, articleImg, img } = (props.article);
     return (
         <>
 
             <Col lg={4} xs={12} className="">
 
                 <CardGroup className="">
-                    <Card className="article-card shadow-sm pt-3 my-5">
+                    <Card className="article-card shadow-sm  my-5">
                         {/* https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-date-medical-kiranshastry-lineal-kiranshastry.png */}
-                        {/* <Card.Img variant="top" src="" /> */}
+                        <Card.Img variant="top" src={articleImg} className="article-img " />
                         {/* their parent div */}
-                        <div className="d-flex justify-content-between align-items-center ">
-                            {/* this div for data  */}
+                        <div className="d-flex justify-content-between align-items-center mt-1">
+                            {/* this div for date  */}
                             <div className="d-flex justify-content-center align-items-center">
                                 <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-date-medical-kiranshastry-lineal-kiranshastry.png" alt="data" className="mx-2 w-25"></img>
                                 <h4 className="me-1">{date}</h4>
@@ -27,7 +27,7 @@ const Article = (props) => {
                             </div>
                         </div>
                         <Card.Body>
-                            <Card.Title className="article-card-title"><h3>{title}</h3></Card.Title>
+                            <Card.Title className="article-card-title mt-2"><h3>{title}</h3></Card.Title>
                             <Card.Text className="article-card-description">
                                 <h6>{description}</h6>
                             </Card.Text>
