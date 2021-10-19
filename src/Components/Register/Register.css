@@ -2,6 +2,7 @@
 .form-container{
     font-family: 'PT Serif', serif;
     font-weight: bold;
+    color:#72569d;
 }
 .register-container{
     background-color: burlywood;
@@ -10,4 +11,8 @@
 .form-container{
     /* height: 40vh; */
     width: 100%;
+}
+.user-icon{
+    width: 50px;
+    /* border-radius: 50%; */
 }

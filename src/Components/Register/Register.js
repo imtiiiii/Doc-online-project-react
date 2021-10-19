@@ -7,21 +7,23 @@ import loginImg from '../../img/login1.png';
 const Register = () => {
     return (
         <>
-            <Container className="my-5 form-container">
+            <Container className="my-5 form-container bg-light">
                 <h1 className="text-center my-4 ">Register </h1>
                 <Row>
-                    <Col lg={6}>
-                        <div>
-                            <img src={loginImg} alt="login" />
+                    <Col lg={6} className="d-lg-flex align-items-center d-none  ">
+                        {/* left side image */}
+                        <div className="d-flex justify-content-center  ">
+                            <img src={loginImg} alt="login" className="w-50" />
                         </div>
                     </Col>
                     <Col lg={6}>
+                        {/* reg */}
                         <div className="d-flex justify-content-center align-items-center">
                             <div className="d-flex justify-content-center align-items-center form-container ">
-                                <Form className="shadow-lg px-5 rounded-3 bg-light mt-5 mb-3 py-5">
+                                <Form className="shadow-sm px-5 rounded-3 bg-light mt-5 mb-3 py-5">
                                     {/* user icon */}
-                                    <div className="w-100 d-flex justify-content-center align-items-center mb-5 mt-3">
-                                        <img src={userImg} alt="user" className=" rounded-pill user-icon" />
+                                    <div className="w-25 mx-auto d-flex justify-content-center align-items-center mb-5 mt-3">
+                                        <img src={userImg} alt="user" className="  user-icon" />
                                     </div>
                                     {/* Emain input field start */}
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -46,7 +48,7 @@ const Register = () => {
                                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                         <Form.Check type="checkbox" label="Aleady Registered?" />
                                     </Form.Group>
-                                    <Button className="btn-theme-purple" type="submit">
+                                    <Button className="btn-theme-purple text-white" type="submit" >
                                         Register
                                     </Button>
                                 </Form>
