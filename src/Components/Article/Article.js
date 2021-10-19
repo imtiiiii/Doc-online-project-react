@@ -10,9 +10,9 @@ const Article = (props) => {
             <Col lg={4} xs={12} className="">
 
                 <CardGroup className="">
-                    <Card className="article-card shadow-sm  my-5">
+                    <Card className="article-card shadow-sm  my-5 bg-light rounded-3">
                         {/* https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-date-medical-kiranshastry-lineal-kiranshastry.png */}
-                        <Card.Img variant="top" src={articleImg} className="article-img " />
+                        <Card.Img variant="top" src={articleImg} className="article-img rounded-3 " />
                         {/* their parent div */}
                         <div className="d-flex justify-content-between align-items-center mt-1">
                             {/* this div for date  */}

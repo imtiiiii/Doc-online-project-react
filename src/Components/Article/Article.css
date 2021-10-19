@@ -1,5 +1,5 @@
 .article-card{
-    height: 800px;
+    height: 750px;
 }
 .article-img{
     width: 100%;
@@ -12,7 +12,7 @@
     font-weight: bold;
 }
 .article-card-description{
-    height: 200px;
+    height: 150px;
 }
 
 .card-footer{
@@ -22,8 +22,8 @@
     width: 30px;
     /* border-radius: 50%; */
 }
-#more-articles{
+/* #more-articles{
     width: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
