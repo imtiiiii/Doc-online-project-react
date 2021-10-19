@@ -6,8 +6,9 @@ import loginImg from '../../img/login1.png';
 const Login = () => {
     return (
         <>
-            <h1 className="text-center">Please Login</h1>
-            <Container className="my-5">
+
+            <Container className="my-5 form-container">
+                <h1 className="text-center my-4 ">Please login </h1>
                 <Row>
                     <Col lg={6}>
                         <div>

@@ -7,8 +7,8 @@ import loginImg from '../../img/login1.png';
 const Register = () => {
     return (
         <>
-            <Container className="my-5">
-                <h1 className="text-center my-4">Register </h1>
+            <Container className="my-5 form-container">
+                <h1 className="text-center my-4 ">Register </h1>
                 <Row>
                     <Col lg={6}>
                         <div>
