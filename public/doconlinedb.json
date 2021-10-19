@@ -112,5 +112,79 @@
             "Author": "Dr. Annie Lenon",
             "img": "https://image.flaticon.com/icons/png/512/965/965153.png"
         }
+    ],
+    [
+        {
+            "id": 15,
+            "name": "Dermatology",
+            "price": "100-200",
+            "img": "https://i.ibb.co/R9DrFWv/drop-zone.png"
+        },
+        {
+            "id": 16,
+            "name": "Internal Medicine",
+            "price": "150-300",
+            "img": "https://i.ibb.co/S3YfS0Y/im.png"
+        },
+        {
+            "id": 17,
+            "name": "Neurology",
+            "price": "200-300",
+            "img": "https://i.ibb.co/brhTHwB/nuro.png"
+        },
+        {
+            "id": 18,
+            "name": "General Medicine",
+            "price": "100-200",
+            "img": "https://i.ibb.co/Qd6H2Vm/gm.png"
+        },
+        {
+            "id": 19,
+            "name": "Dentisty",
+            "price": "500-700",
+            "img": "https://image.freepik.com/free-vector/dental-care-background-design_1284-876.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Kids Speacialist",
+            "price": "100-200",
+            "img": "https://i.ibb.co/v3y9rYH/baby.png"
+        },
+        {
+            "id": 21,
+            "name": "HIV/AIDS",
+            "price": "800-1000",
+            "img": "https://i.ibb.co/wsSrZrC/aids.png"
+        },
+        {
+            "id": 22,
+            "name": "Urology",
+            "price": "100-200",
+            "img": "https://i.ibb.co/CBGTD9G/urolo.png"
+        },
+        {
+            "id": 23,
+            "name": "Allergy",
+            "price": "100-200",
+            "img": "https://i.ibb.co/c1HjwVL/Allergy.png"
+        },
+        {
+            "id": 24,
+            "name": "Paediatrics",
+            "price": "300-400",
+            "img": "https://i.ibb.co/R9DrFWv/drop-zone.png"
+        },
+        {
+            "id": 25,
+            "name": "Gastroentrology",
+            "price": "500-700",
+            "img": "https://i.ibb.co/GPmWfs0/gas.png"
+        },
+        {
+            "id": 26,
+            "name": "Infectous Disease",
+            "price": "300-400",
+            "img": "https://i.ibb.co/rvNwB0h/infectant.png"
+        }
     ]
 ]
