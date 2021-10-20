@@ -7,7 +7,7 @@ const Article = (props) => {
     return (
         <>
 
-            <Col lg={4} xs={12} className="">
+            <Col lg={4} xs={12} className="card-animation">
 
                 <CardGroup className="">
                     <Card className="article-card shadow-sm  my-5 bg-light rounded-3">

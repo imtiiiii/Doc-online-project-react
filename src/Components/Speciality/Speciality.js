@@ -10,7 +10,7 @@ const Speciality = (props) => {
 
     return (
         <>
-            <Col lg={2} className="my-5 speciality-container bg-light shadow-sm rounded-3 speciality mx-lg-5 d-flex flex-column justify-content-center align-items-center">
+            <Col lg={2} className="my-5 speciality-container  shadow-sm rounded-3 speciality mx-lg-5 d-flex flex-column justify-content-center align-items-center card-animation">
                 <div className="speciality-img">
                     <img src={img} alt="speciality" className="rounded-pill"></img>
                 </div>

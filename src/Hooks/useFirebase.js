@@ -72,7 +72,7 @@ const useFirebase = () => {
             }
         });
     }, [])
-    const hadnleLogout = () => {
+    const handleLogout = () => {
         const auth = getAuth();
         signOut(auth).then(() => {
             setRegStutus("logout succesfull");
@@ -88,7 +88,7 @@ const useFirebase = () => {
         CreateAccountWithEmailPass,
         googleLogin,
         regStutus,
-        hadnleLogout,
+        handleLogout,
         isLoading
     }
 

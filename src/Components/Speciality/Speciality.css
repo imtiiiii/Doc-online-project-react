@@ -1,5 +1,5 @@
 .speciality-container{
-    /* background-color: ghostwhite; */
+    background-color: white;
 
 }
 .speciality{
@@ -14,4 +14,8 @@
 .book-this-btn{
     text-decoration: none;
     color:white;
+}
+.card-animation:hover{
+    transition: 0.4s;
+    transform: translateY(-20px);
 }

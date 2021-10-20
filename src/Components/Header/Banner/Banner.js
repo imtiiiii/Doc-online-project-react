@@ -3,14 +3,15 @@ import React from 'react';
 import { Col, Row, Button, Container } from 'react-bootstrap';
 import './Banner.css';
 import banner from '../../../img/banner.jpeg'
+import 'animate.css';
 const Banner = () => {
     return (
         <div className="banner">
             <Container>
                 <Row className=" mx-auto">
-                    <Col lg={6} xs={11} className="  py-5 ps-lg-5  d-flex flex-column justify-content-center " id="banner-text">
+                    <Col lg={6} xs={11} className="  py-5   d-flex flex-column justify-content-center animate__animated animate__backInUp " id="banner-text">
                         <div className="">
-                            <h1 className="mb-5">Consult a Doctor
+                            <h1 className="mb-5  ">Consult a Doctor
                                 <br />
                                 anytime,anywhere <br />
                                 by <span className="video-call">Video Call</span>

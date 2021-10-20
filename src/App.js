@@ -11,6 +11,7 @@ import Articles from './Components/Articles/Articles';
 import AuthProvider from './Context/AuthProvider';
 import Appointment from './Components/Appointment/Appointment';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import NotFound from './Components/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
@@ -23,13 +24,14 @@ function App() {
             <Route path="/" exact>
               <Home></Home>
             </Route>
+            {/* service route - dynamic */}
+            <PrivateRoute path="/home/:id" exact>
+              <Appointment></Appointment>
+              {/* home */}
+            </PrivateRoute>
             <Route path="/home">
               <Home></Home>
             </Route>
-            {/* service route - dynamic */}
-            <PrivateRoute path="/home/:id">
-              <Appointment></Appointment>
-            </PrivateRoute>
             {/* Route of - FAQ page*/}
             <Route path='/faq'>
               <Faq></Faq>
@@ -47,7 +49,7 @@ function App() {
               <Articles></Articles>
             </PrivateRoute>
             <Route path="*">
-
+              <NotFound></NotFound>
             </Route>
           </Switch>
           {/* footer here */}

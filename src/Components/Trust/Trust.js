@@ -7,7 +7,7 @@ const Trust = (props) => {
     const { title, description, img } = props.reason
     return (
 
-        <Col lg={3} xs={11} className="bg-light   rounded-3 trust-card border border-white border-5">
+        <Col lg={3} xs={11} className="bg-light   rounded-3 trust-card border border-white border-5 card-animation">
             <div className="w-50 trust-icon mx-auto my-4">
                 <img src={img} alt="" className="" />
             </div>

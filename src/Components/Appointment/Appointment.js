@@ -45,9 +45,9 @@ const Appointment = () => {
 
     return (
         <div >
-            <Container className="book-this-service-container d-lg-flex flex-column justify-lg-content-center align-items-lg-center rounded-lg-3 mt-2">
+            <Container className="book-this-service-container d-lg-flex flex-column justify-lg-content-center align-items-lg-center rounded-lg-3 mt-2 mb-5">
                 {/* container of single service */}
-                <div className="single-service p-5 rounded-circle d-flex flex-column justify-content-center align-items-center">
+                <div className="single-service p-5 rounded-circle d-flex flex-column justify-content-center align-items-center card-animation mt-5">
                     <div className="speciality-img">
                         <img src={service[0]?.img} alt="speciality" className="rounded-pill"></img>
                     </div>

@@ -6,12 +6,12 @@ import './Navigation.css'
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../Hooks/useAuth'
 const Navigation = () => {
-    const { user, hadnleLogout } = useAuth();
+    const { user, handleLogout } = useAuth();
 
     return (
         <Navbar className="nav-bar" collapseOnSelect expand="lg">
             <Container>
-                <Navbar.Brand href="/home">
+                <Navbar.Brand as={HashLink} to="/home">
                     Doconline <br />
                     Consult
                 </Navbar.Brand>
@@ -21,7 +21,7 @@ const Navigation = () => {
                     <Nav.Link as={HashLink} to="/articles">Articles</Nav.Link>
                     {
                         user ?
-                            <Nav.Link as={HashLink} to="/login" onClick={hadnleLogout}>Logout = {user?.email}</Nav.Link>
+                            <Nav.Link as={HashLink} to="/login" onClick={handleLogout}>Logout = {user?.email}</Nav.Link>
                             :
 
                             <Nav.Link as={HashLink} to="/login">Login</Nav.Link>

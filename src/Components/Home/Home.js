@@ -40,8 +40,8 @@ const Home = () => {
                 </Row>
             </Container>
             <div className="service-container">
-                <div className="w-50 mx-auto text-center">
-                    <h1>Our consulting specialities</h1>
+                <div className="w-50 mx-auto text-center pt-4">
+                    <h1>Our consulting specialitiessss</h1>
                     <h4>Ask a doctor online and get quick medical advice for your health queries. Our medical panel consists of over 3500+ doctors from 80 speacialities</h4>
                 </div>
                 {/* now i will map in the whole array of specialities to show the data  */}

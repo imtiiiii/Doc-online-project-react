@@ -34,9 +34,8 @@ const Login = () => {
         if (value) {
             history.push('/register');
         }
-
-
     }
+
     return (
         <>
 
