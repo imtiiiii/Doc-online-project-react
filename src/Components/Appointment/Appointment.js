@@ -45,16 +45,17 @@ const Appointment = () => {
 
     return (
         <div >
-            <Container className="book-this-service-container d-flex flex-column justify-content-center align-items-center">
-                <div className="bg-danger p-5 rounded-circle d-flex flex-column justify-content-center align-items-center">
+            <Container className="book-this-service-container d-lg-flex flex-column justify-lg-content-center align-items-lg-center rounded-lg-3 mt-2">
+                {/* container of single service */}
+                <div className="single-service p-5 rounded-circle d-flex flex-column justify-content-center align-items-center">
                     <div className="speciality-img">
                         <img src={service[0]?.img} alt="speciality" className="rounded-pill"></img>
                     </div>
                     <div >
-                        <h3 className="fw-bolder">{service[0]?.name}</h3>
+                        <h4 className="fw-bolder pb-2">{service[0]?.name}</h4>
                     </div>
                     <div >
-                        <h4 className="fw-bolder">Price range: ${service[0]?.price}</h4>
+                        <h4 className="fw-bolder p-lg-3 ">Price range: ${service[0]?.price}</h4>
                     </div>
                 </div>
                 <h1 className="text-center my-5 fw-bold">Book Now</h1>
@@ -82,7 +83,7 @@ const Appointment = () => {
                                 {/* parent of checkbox */}
                                 <div className=" d-lg-flex flex-start">
                                     {/* checkbox-1 */}
-                                    <div className="bg-light w-25 py-3 px-4 mx-3 rounded-pill">
+                                    <div className="bg-light w-25 py-3 px-4 mx-lg-3 rounded-pill">
                                         <Form.Group className="mb-3" controlId="formBasicCheckbox" >
                                             <Form.Check type="checkbox" label="Voice Call" htmlFor="call-type" />
                                         </Form.Group>

@@ -1,6 +1,10 @@
 .book-this-service-container{
-    height: 150vh;
-    background-color: burlywood;
+    height: 160vh;
+    background-color:ghostwhite;
+    color: #1e1451;
+}
+.single-service{
+    background-color: rgba(236, 178, 207, 0.342);
 }
 .book-img img{
     width: 400px;
