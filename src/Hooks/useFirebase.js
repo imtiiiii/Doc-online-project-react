@@ -75,10 +75,13 @@ const useFirebase = () => {
     const handleLogout = () => {
         const auth = getAuth();
         signOut(auth).then(() => {
-            setRegStutus("logout succesfull");
+
             setUser(null);
+            setRegStutus("Login Successfull");
+
         }).catch((error) => {
-            setRegStutus(error.message)
+
+
         });
 
     }

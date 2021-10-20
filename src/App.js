@@ -26,7 +26,7 @@ function App() {
               <Home></Home>
             </Route>
             {/* service route - dynamic */}
-            <PrivateRoute path="/home/:id" exact>
+            <PrivateRoute path="/home/:id" >
               <Appointment></Appointment>
               {/* home */}
             </PrivateRoute>
