@@ -1,11 +1,15 @@
 // this route is for private route only.
 // user can view this pages if they are logged in 
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
+    if (isLoading) {
+        return <Spinner animation="grow" variant="secondary" />
+    }
     return (
         <Route
             {...rest}

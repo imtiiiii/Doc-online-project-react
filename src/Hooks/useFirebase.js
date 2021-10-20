@@ -9,17 +9,22 @@ const useFirebase = () => {
     const [user, setUser] = useState(null);
     //keeping a status to show the user if registration was succesfull or not
     const [regStutus, setRegStutus] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
+
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
     // create account with email and password
     const CreateAccountWithEmailPass = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
+                setIsLoading(true);
                 setUser(result.user);
-                setRegStutus("Login Successfull");
+                setRegStutus("Successful");
+                setIsLoading(false);
             })
             .catch((error) => {
-                setRegStutus("There was some error! Please try again");
+                if (isLoading === false)
+                    setRegStutus("error");
 
             });
     }
@@ -27,11 +32,15 @@ const useFirebase = () => {
     const loginWithEmailPass = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
+                setIsLoading(true);
+                setRegStutus("wait");
                 setUser(result.user);
-                setRegStutus("Successfull");
+                setRegStutus("Login Successfull");
+                setIsLoading(false);
             })
             .catch((error) => {
-                setRegStutus("Wrong password");
+                if (!isLoading)
+                    setRegStutus("Error try again");
 
             });
     }
@@ -39,18 +48,25 @@ const useFirebase = () => {
     const googleLogin = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
+                setIsLoading(true);
+                setRegStutus("wait");
                 setUser(result.user);
                 setRegStutus("Login Successfull");
+                setIsLoading(false);
             }).catch((error) => {
-                setRegStutus("Wait");
+                if (!isLoading)
+                    setRegStutus("Error try again");
             });
     }
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
 
+                setIsLoading(true);
+                setRegStutus("wait");
                 setUser(user);
-                // ...
+                setRegStutus("Login Successfull");
+                setIsLoading(false);
             } else {
                 setUser(null);
             }
@@ -72,7 +88,8 @@ const useFirebase = () => {
         CreateAccountWithEmailPass,
         googleLogin,
         regStutus,
-        hadnleLogout
+        hadnleLogout,
+        isLoading
     }
 
 }
