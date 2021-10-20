@@ -18,7 +18,7 @@ const Speciality = (props) => {
                     <h3>{name}</h3>
                 </div>
                 <Button className="btn-theme-purple text-white my-3" type="submit" >
-                    <NavLink to={`/home/${id}`}>
+                    <NavLink className="book-this-btn" to={`/home/${id}`}>
                         Book this
                     </NavLink>
                 </Button>
