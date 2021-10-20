@@ -18,13 +18,15 @@ function App() {
         <Router>
           <Header></Header>
           <Switch>
+
             {/* route of - Home page */}
             <Route path="/" exact>
               <Home></Home>
             </Route>
-            <Route path="/home" exact>
+            <Route path="/home">
               <Home></Home>
             </Route>
+            {/* service route - dynamic */}
             <PrivateRoute path="/home/:id">
               <Appointment></Appointment>
             </PrivateRoute>
@@ -36,13 +38,19 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
+            {/* login page */}
             <Route path="/login">
               <Login></Login>
             </Route>
+            {/* private article page */}
             <PrivateRoute path='/articles'>
               <Articles></Articles>
             </PrivateRoute>
+            <Route path="*">
+
+            </Route>
           </Switch>
+          {/* footer here */}
         </Router>
       </AuthProvider>
     </div>
