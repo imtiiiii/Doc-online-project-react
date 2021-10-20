@@ -10,6 +10,7 @@ import Login from './Components/Login/Login';
 import Articles from './Components/Articles/Articles';
 import AuthProvider from './Context/AuthProvider';
 import Appointment from './Components/Appointment/Appointment';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
@@ -24,9 +25,9 @@ function App() {
             <Route path="/home" exact>
               <Home></Home>
             </Route>
-            <Route path="/home/:id">
+            <PrivateRoute path="/home/:id">
               <Appointment></Appointment>
-            </Route>
+            </PrivateRoute>
             {/* Route of - FAQ page*/}
             <Route path='/faq'>
               <Faq></Faq>
@@ -38,9 +39,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path='/articles'>
+            <PrivateRoute path='/articles'>
               <Articles></Articles>
-            </Route>
+            </PrivateRoute>
           </Switch>
         </Router>
       </AuthProvider>
