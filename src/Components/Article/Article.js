@@ -29,7 +29,7 @@ const Article = (props) => {
                         <Card.Body>
                             <Card.Title className="article-card-title mt-2"><h3>{title}</h3></Card.Title>
                             <Card.Text className="article-card-description">
-                                <h6>{description}</h6>
+                                <p>{description}</p>
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer className="card-footer d-flex justify-content-center align-items-center">

@@ -5,7 +5,7 @@ const Appointment = () => {
     const [book, setBook] = useState([]);
     let { id } = useParams();
     useEffect(() => {
-        fetch('https://api.jsonbin.io/b/616f01194a82881d6c627bb2')
+        fetch('HTTPS://imtiiiii.github.io/db/doconlinedb.json')
             .then(res => res.json())
             .then(data => setBook(data[3]));
     }, [])

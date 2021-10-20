@@ -7,7 +7,7 @@ const Articles = () => {
     const [articles, setArticles] = useState([]);
     const [showAllArticles, setShowAllArticles] = useState(false);
     useEffect(() => {
-        fetch("./doconlinedb.json")
+        fetch("HTTPS://imtiiiii.github.io/db/doconlinedb.json")
             .then(res => res.json())
             .then(data => setArticles(data[2]));
     },
@@ -18,7 +18,7 @@ const Articles = () => {
     }
     return (
         <>
-            <div className="articles-heading text-center mt-5">
+            <div className="articles-heading text-center mt-5" id="fetures">
                 <h1>Our Recent articles</h1>
                 <h5>Article is a part or segment of something joined to other parts, <br></br>
                     or, in combination,forming a structured set.

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import initFirebase from '../firebase/firebase.init';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { useHistory } from 'react-router';
 initFirebase();
 const useFirebase = () => {
@@ -56,13 +56,23 @@ const useFirebase = () => {
             }
         });
     }, [])
+    const hadnleLogout = () => {
+        const auth = getAuth();
+        signOut(auth).then(() => {
+            setRegStutus("logout succesfull");
+            setUser(null);
+        }).catch((error) => {
+            setRegStutus(error.message)
+        });
 
+    }
     return {
         user,
         loginWithEmailPass,
         CreateAccountWithEmailPass,
         googleLogin,
-        regStutus
+        regStutus,
+        hadnleLogout
     }
 
 }

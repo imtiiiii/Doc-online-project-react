@@ -4,8 +4,9 @@ import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import userImg from '../../img/register1.png'
 import loginImg from '../../img/login1.png';
 import useAuth from '../../Hooks/useAuth';
+import { useHistory } from 'react-router';
 const Login = () => {
-
+    const history = useHistory();
     const { user, loginWithEmailPass, googleLogin, regStutus } = useAuth();
 
     // using  useState to keep user email and password
@@ -26,6 +27,14 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         loginWithEmailPass(userDetails.email, userDetails.pass)
+
+    }
+    const dontHaveAnAccount = (e) => {
+        const value = e.target.checked;
+        if (value) {
+            history.push('/register');
+        }
+
 
     }
     return (
@@ -56,6 +65,10 @@ const Login = () => {
                                     <div className="mb-3">
                                         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                                         <input type="password" className="form-control" id="exampleInputPassword1" name="pass" onBlur={handleInput} />
+                                    </div>
+                                    <div className="mb-3 form-check">
+                                        <input type="checkbox" className="form-check-input" id="exampleCheck1" onClick={dontHaveAnAccount} />
+                                        <label className="form-check-label" htmlFor="exampleCheck1" >Don't have an account?</label>
                                     </div>
                                     <Button className="btn-theme-purple text-white" type="submit" >
                                         Login

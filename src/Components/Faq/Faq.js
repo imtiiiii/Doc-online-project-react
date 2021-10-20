@@ -11,7 +11,7 @@ const Faq = () => {
     //now we have to fetch the data from our db
     // so we will useEffect to load the data 
     useEffect(() => {
-        fetch("./doconlinedb.json")
+        fetch("https://imtiiiii.github.io/db/doconlinedb.json")
             .then(res => res.json())
             .then(data => setQNAs(data[1]));
     }, [])

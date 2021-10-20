@@ -10,7 +10,7 @@ const Home = () => {
     //now use a useEffect to load the data 
     //which contains trust reasons
     useEffect(() => {
-        fetch('./doconlinedb.json')
+        fetch('HTTPS://imtiiiii.github.io/db/doconlinedb.json')
             .then(res => res.json())
             .then(data => setWhyTrusted(data[0]));
     }, [])
@@ -20,7 +20,7 @@ const Home = () => {
     //now use a useEffect to load the data 
     //which contains specialities data
     useEffect(() => {
-        fetch('../../../public/doconlinedb.json')
+        fetch('HTTPS://imtiiiii.github.io/db/doconlinedb.json')
             .then(res => res.json())
             .then(data => setSpecialities(data[3]));
     }, [])
