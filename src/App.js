@@ -12,6 +12,7 @@ import AuthProvider from './Context/AuthProvider';
 import Appointment from './Components/Appointment/Appointment';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -53,6 +54,9 @@ function App() {
             </Route>
           </Switch>
           {/* footer here */}
+          <Footer>
+
+          </Footer>
         </Router>
       </AuthProvider>
     </div>
