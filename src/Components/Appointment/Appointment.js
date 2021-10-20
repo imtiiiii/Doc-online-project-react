@@ -83,14 +83,14 @@ const Appointment = () => {
                                 {/* parent of checkbox */}
                                 <div className=" d-lg-flex flex-start">
                                     {/* checkbox-1 */}
-                                    <div className="bg-light w-25 py-3 px-4 mx-lg-3 rounded-pill">
+                                    <div className="btn-theme-purple w-25 py-3 px-4 mx-lg-3 rounded-pill">
                                         <Form.Group className="mb-3" controlId="formBasicCheckbox" >
                                             <Form.Check type="checkbox" label="Voice Call" htmlFor="call-type" />
                                         </Form.Group>
                                     </div>
                                     {/* checkbox-2 */}
-                                    <div className="bg-light w-25 py-3 px-4 rounded-pill">
-                                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <div className=" w-25 py-3 px-3 rounded-pill btn-theme-purple">
+                                        <Form.Group className="mb-3 " controlId="formBasicCheckbox">
                                             <Form.Check type="checkbox" label="Video Call" htmlFor="call-type" />
                                         </Form.Group>
                                     </div>
@@ -99,7 +99,7 @@ const Appointment = () => {
                             {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group> */}
-                            <Button variant="primary" type="submit" onClick={handleResponse}>
+                            <Button variant="primary" type="submit" className="btn-theme-purple" onClick={handleResponse}>
                                 Book
                             </Button>
                         </Form>
