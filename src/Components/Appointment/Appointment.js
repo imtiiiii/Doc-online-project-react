@@ -32,7 +32,10 @@ const Appointment = () => {
         }
     }
     //11.Stop from reloading whe user submits his response
+    const handleResponse = (e) => {
+        e.preventDefault();
 
+    }
 
     // 12. Finally show it to the user
 
@@ -56,25 +59,46 @@ const Appointment = () => {
                 </div>
                 <h1 className="text-center my-5 fw-bold">Book Now</h1>
                 <Row className=" w-100 d-flex  justify-content-center align-items-center ">
-                    <Col lg={4} className="book-img my-5">
+                    <Col lg={4} className="book-img my-5 d-none d-lg-block">
                         <img src={bookImg} alt="book"></img>
                     </Col>
-                    <Col lg={4} className="">
+                    <Col lg={6} className="">
                         <Form className="my-5">
                             <Form.Group className="mb-3" controlId="formBasicEmail">
+                                {/* email------- */}
                                 <Form.Label >Email address</Form.Label>
                                 <Form.Control className="my-2" type="email" placeholder="Enter email" />
+                                {/* phone number-------- */}
                                 <Form.Label>Your Contact Number</Form.Label>
                                 <Form.Control type="phone" className="my-2" placeholder="Phone Number" />
+                                {/* adress------- */}
                                 <Form.Label>Address</Form.Label>
                                 <Form.Control type="input" className="my-2" placeholder="Adress" />
+                                {/* age-------- */}
                                 <Form.Label>Age</Form.Label>
                                 <Form.Control type="number" className="my-2" placeholder="Age" />
+                                {/* checkbox starts */}
+
+                                {/* parent of checkbox */}
+                                <div className=" d-lg-flex flex-start">
+                                    {/* checkbox-1 */}
+                                    <div className="bg-light w-25 py-3 px-4 mx-3 rounded-pill">
+                                        <Form.Group className="mb-3" controlId="formBasicCheckbox" >
+                                            <Form.Check type="checkbox" label="Voice Call" htmlFor="call-type" />
+                                        </Form.Group>
+                                    </div>
+                                    {/* checkbox-2 */}
+                                    <div className="bg-light w-25 py-3 px-4 rounded-pill">
+                                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                            <Form.Check type="checkbox" label="Video Call" htmlFor="call-type" />
+                                        </Form.Group>
+                                    </div>
+                                </div>
                             </Form.Group>
                             {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group> */}
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" onClick={handleResponse}>
                                 Book
                             </Button>
                         </Form>

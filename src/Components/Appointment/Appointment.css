@@ -1,9 +1,9 @@
 .book-this-service-container{
-    /* height: 100vh; */
+    height: 150vh;
     background-color: burlywood;
 }
 .book-img img{
-    width: 300px;
+    width: 400px;
     border-radius: 50%;
 
 
