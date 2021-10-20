@@ -10,15 +10,12 @@ const Appointment = () => {
             .then(data => setBook(data[3]));
     }, [])
     console.log(book);
-    let found;
-    useEffect(() => {
 
-    }, [book])
 
 
     return (
         <div>
-
+            <h1>Hi im dynamic {id}</h1>
         </div>
     );
 };
