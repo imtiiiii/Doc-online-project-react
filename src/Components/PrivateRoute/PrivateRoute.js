@@ -5,9 +5,8 @@ import { Spinner } from 'react-bootstrap';
 import { Redirect, Route, useHistory, useLocation } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 
+
 const PrivateRoute = ({ children, ...rest }) => {
-    let previousLocation = useLocation();
-    const redirectUrl = previousLocation?.state?.from || '/home';
     const { user, isLoading } = useAuth();
     if (isLoading) {
         return <Spinner animation="grow" variant="secondary" />
@@ -22,7 +21,9 @@ const PrivateRoute = ({ children, ...rest }) => {
                         <Redirect to={
                             {
                                 pathname: "/login",
-                                state: { from: location }
+                                state: { from: location },
+
+
                             }
                         }></Redirect>
 
