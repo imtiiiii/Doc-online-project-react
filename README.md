@@ -7,6 +7,6 @@ This is a website of new modern telemedic center.In this fast moving world of te
 * Doconline Consult have 3500+ Doctors available for all specialities
 * Secure HIPPA complaint end-to-end encryption video call.
 
-This project was bootstrapped with React and React Bootstrap [visit Doconline Consult](https://github.com/facebook/create-react-app).
+This project was bootstrapped with React and React Bootstrap [visit Doconline Consult](https://doc-online-imtiaz-react.netlify.app/).
 
 ## Thank you for visiting 

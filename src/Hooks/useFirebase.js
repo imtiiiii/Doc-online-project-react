@@ -9,7 +9,8 @@ const useFirebase = () => {
     const [user, setUser] = useState(null);
     //keeping a status to show the user if registration was succesfull or not
     const [regStutus, setRegStutus] = useState('');
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
+    const [firstLogin, setFirstLogin] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -21,6 +22,7 @@ const useFirebase = () => {
                 setUser(result.user);
                 setRegStutus("Successful");
                 setIsLoading(false);
+                setFirstLogin(false);
             })
             .catch((error) => {
                 if (isLoading === false)
@@ -37,9 +39,10 @@ const useFirebase = () => {
                 setUser(result.user);
                 setRegStutus("Login Successfull");
                 setIsLoading(false);
+                setFirstLogin(false);
             })
             .catch((error) => {
-                if (!isLoading)
+                if (isLoading && firstLogin)
                     setRegStutus("Error try again");
 
             });
@@ -53,6 +56,7 @@ const useFirebase = () => {
                 setUser(result.user);
                 setRegStutus("Login Successfull");
                 setIsLoading(false);
+                setFirstLogin(false);
             }).catch((error) => {
                 if (!isLoading)
                     setRegStutus("Error try again");
@@ -92,7 +96,8 @@ const useFirebase = () => {
         googleLogin,
         regStutus,
         handleLogout,
-        isLoading
+        isLoading,
+        firstLogin
     }
 
 }

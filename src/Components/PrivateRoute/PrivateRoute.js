@@ -7,8 +7,8 @@ import useAuth from '../../Hooks/useAuth';
 
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user, isLoading } = useAuth();
-    if (isLoading) {
+    const { user, isLoading, firstLogin } = useAuth();
+    if (isLoading && firstLogin === false) {
         return <Spinner animation="grow" variant="secondary" />
     }
     return (
